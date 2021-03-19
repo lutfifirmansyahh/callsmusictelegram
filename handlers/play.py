@@ -20,7 +20,7 @@ from helpers.wrappers import errors
 async def play(_, message: Message):
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
 
-    res = await message.reply_text("🔄 Sabar Beb, Lagu Kamu Sedang Di-Proses!...")
+    res = await message.reply_text("🔄 Sabar Sayang, Lagu Sedang Di Proses!...")
 
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
@@ -67,5 +67,5 @@ async def play(_, message: Message):
         position = queues.add(message.chat.id, file_path)
         await res.edit_text(f"#️⃣ Lagumu Akan Diputar Diurutan : {position}.")
     else:
-        await res.edit_text("▶️ Oke Beb, Lagumu Sudah Di-Mulai!...")
+        await res.edit_text("▶️ Oke, Lagu Lu udah Mulai!...")
         callsmusic.pytgcalls.join_group_call(message.chat.id, file_path, 48000, callsmusic.pytgcalls.get_cache_peer())
