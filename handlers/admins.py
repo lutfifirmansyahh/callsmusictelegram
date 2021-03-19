@@ -24,7 +24,7 @@ async def pause(_, message: Message):
         await message.reply_text("❕ Nothing is playing.")
     else:
         callsmusic.pytgcalls.pause_stream(message.chat.id)
-        await message.reply_text("⏸ Okeyy, Lagumu Sudah Berhenti/Dijeda Sementara!.")
+        await message.reply_text("⏸ Lagu berhenti!.")
 
 
 @Client.on_message(command(["resume", "r"]))
@@ -55,7 +55,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(message.chat.id)
-        await message.reply_text("⏹ Maafin Aku, Lagumu Sudah Berhenti/Abis/Dihentikan!.")
+        await message.reply_text("⏹ Maapin gw, Lagu lu udah Berhenti/Abis/Dihentikan!.")
 
 
 @Client.on_message(command(["skip", "f"]))
@@ -72,7 +72,7 @@ async def skip(_, message: Message):
         else:
             callsmusic.pytgcalls.change_stream(message.chat.id, queues.get(message.chat.id)["file_path"])
 
-        await message.reply_text("⏩ Ehh Lagu Kamu Diskip!, Next Lanjut Lagu Selanjutnya!.")
+        await message.reply_text("⏩ Lagu di Skip!, Next Lanjut Lagu Selanjutnya!.")
 
 
 @Client.on_message(command("admincache"))
