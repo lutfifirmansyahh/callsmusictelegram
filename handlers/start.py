@@ -7,28 +7,28 @@ from helpers.filters import command, other_filters, other_filters2
 @Client.on_message(command("start") & other_filters2)
 async def start(_, message: Message):
     await message.reply_text(
-        f"""<b>👋🏻 Haii Guys! {message.from_user.first_name}!</b>
+        f"""<b>👋🏻 Haii Bagong! {message.from_user.first_name}!</b>
 
-I am Pemutar Musik!, Kamu Di-Telegram Bisa Mendengarkan Lagu!.
+Gw Robot Pemutar Musik!,Di-Telegram Lu Bisa Dengerin Lagu!.
 
 Silahkan Klik Kotak Dibawah Ini, Apabila Kurang Paham Bisa Dibantu Nanti!.""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "⚒ Owner!", url="https://t.me/afterdaytoxic"
+                        "⚒ Owner!", url="https://t.me/yangtagtolol"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/humangabutguys"
+                        "💬 Group", url="https://t.me/gcsampah"
                     ),
                     InlineKeyboardButton(
-                        "Channel 🔈", url="https://t.me/captionanakmuda"
+                        "Channel 🔈", url="https://t.me/channeldregs"
                 ],
                 [
                     InlineKeyboardButton(
-                        "Panduanku Buat Bermusik 💕", url="https://telegra.ph/𝓝𝓪𝓶𝓪-𝓐𝓴𝓾-03-19"
+                        "PANDUAN CARA MENGGUNAKAN BOT MUSIK", url="https://telegra.ph/ᴜᴘɪ-03-19"
                     )
                 ]
             ]
