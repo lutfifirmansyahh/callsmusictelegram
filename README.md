@@ -38,6 +38,8 @@ Copy `example.env` to `.env` and fill it with your credentials.
 
 [Click here](https://github.com/anehajahlu/callsmusicherogw)
 
+[Click here](https://github.com/lutfifirmansyahh/callsmusicherogw)
+
 
 ## Credits
 
